@@ -1,0 +1,53 @@
+:root {
+  --default-font: "Inter", sans-serif;
+  --heading-font: "Exo 2", sans-serif;
+  --default-color: #e2e7f2;
+  --secondary-color: #8691ae;
+  --tertiary-color: #4cbdc3;
+}
+
+body {
+  background-color: #0f172a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: var(--default-color);
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.hero {
+  text-align: center;
+  padding: 160px;
+}
+
+.btn-branding {
+  border: 2px solid var(--default-color);
+  border-radius: 10px;
+  color: var(--default-color);
+  padding: 10px 30px;
+  transition: all 100ms ease-in-out;
+  font-size: 18px;
+}
+
+.btn-branding:hover {
+  border: 2px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+}
