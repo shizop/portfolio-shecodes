@@ -41,6 +41,15 @@ p {
   font-size: 18px;
 }
 
+a {
+  color: var(--default-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--tertiary-color);
+}
+
 .hero {
   text-align: center;
   padding: 160px 20px;
@@ -57,11 +66,11 @@ p {
   padding: 160px 20px;
 }
 
-.content-container-content {
+.content {
   margin: 30px;
 }
 
-.about-section h1 {
+.content-container h1 {
   font-size: 70px;
 }
 
@@ -90,8 +99,72 @@ p {
   border-radius: 25px;
 }
 
+.project {
+  padding: 30px 20px;
+  transition: all 100ms ease-in-out;
+}
+.project:hover {
+  border-radius: 5px;
+  background: rgba(134, 145, 174, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
 .project-description {
   padding: 0 20px;
+}
+
+.project-description p {
+  line-height: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.project-description li {
+  list-style: none;
+  margin-right: 15px;
+  color: var(--tertiary-color);
+  background: rgba(76, 189, 195, 0.2);
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+label {
+  color: var(--secondary-color);
+}
+
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--default-color);
+  font-weight: bold;
+  line-height: 42px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 20px;
+  color: var(--secondary-color);
+  line-height: 42px;
+}
+
+.contact h2 {
+  color: var(--secondary-color);
+}
+
+.contact a,
+nav a:hover {
+  color: var(--tertiary-color);
 }
 
 @media (max-width: 900px) {
@@ -103,11 +176,33 @@ p {
     font-size: 26px;
   }
 
+  p,
+  li {
+    font-size: 16px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
+
+  .content {
+    margin: 0 30px;
+  }
+
   .project-description {
     padding: 0;
+    text-align: center;
+  }
+
+  .project .img-fluid {
+    margin-bottom: 20px;
+  }
+
+  .project .btn {
+    justify-content: center;
+  }
+
+  .contact {
     text-align: center;
   }
 }
