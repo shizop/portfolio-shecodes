@@ -8,6 +8,7 @@
 
 body {
   background-color: #0f172a;
+  font-family: var(--default-font);
 }
 
 h1,
@@ -30,12 +31,25 @@ h2 {
   font-size: 30px;
   line-height: 1.5;
   font-weight: bold;
+  color: var(--default-color);
+}
+
+p {
   color: var(--secondary-color);
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 .hero {
   text-align: center;
-  padding: 160px;
+  padding: 160px 20px;
+}
+
+.hero h2 {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .btn-branding {
@@ -50,4 +64,26 @@ h2 {
 .btn-branding:hover {
   border: 2px solid var(--tertiary-color);
   color: var(--tertiary-color);
+}
+
+.project-description {
+  padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
