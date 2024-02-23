@@ -27,7 +27,8 @@ h1 {
   color: var(--default-color);
 }
 
-h2 {
+h2,
+.card-title h2 {
   font-size: 30px;
   line-height: 1.5;
   font-weight: bold;
@@ -64,6 +65,17 @@ p {
 .btn-branding:hover {
   border: 2px solid var(--tertiary-color);
   color: var(--tertiary-color);
+}
+
+.card {
+  background-color: #0f172a;
+  border: none;
+  max-width: 600px;
+}
+
+.img-fluid {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
 }
 
 .project-description {
