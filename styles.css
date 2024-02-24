@@ -125,7 +125,7 @@ ul {
   margin: 0;
 }
 
-.project-description li {
+.project-desciption li {
   list-style: none;
   margin-right: 15px;
   color: var(--tertiary-color);
